@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/funbox_nyamushka/static/css/main.3b580b87.css",
+    "main.js": "/funbox_nyamushka/static/js/main.5dabecbd.js",
+    "static/media/cat.svg": "/funbox_nyamushka/static/media/cat.2c1471a0120374d77143.svg",
+    "static/media/Pattern@2x.png": "/funbox_nyamushka/static/media/Pattern@2x.b70e3c03338dd57ce7b5.png",
+    "index.html": "/funbox_nyamushka/index.html",
+    "main.3b580b87.css.map": "/funbox_nyamushka/static/css/main.3b580b87.css.map",
+    "main.5dabecbd.js.map": "/funbox_nyamushka/static/js/main.5dabecbd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b580b87.css",
+    "static/js/main.5dabecbd.js"
+  ]
+}
