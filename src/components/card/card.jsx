@@ -12,7 +12,7 @@ export default function Card({item}) {
     }
 
     const handleCardClick = (e) => {
-        setCardClicked(true);
+        setCardClicked(!cardClicked);
     }
 
     const handleMouseLeave = (e) => {
@@ -24,7 +24,7 @@ export default function Card({item}) {
 
     if ( !inactive )return (
         <div className="card-container">
-            <div className={!active ? "card" : "card card-active"} onClick={handleCardClick} onMouseLeave={handleMouseLeave}>
+            <div className={!active ? "card" : "active-card"} onClick={handleCardClick} onMouseLeave={handleMouseLeave}>
                 <span className="fairy">Сказочное заморское яство</span>
                 <h2 className="name">Нямушка</h2>
                 <h3 className="contain">{contain}</h3>
@@ -42,7 +42,7 @@ export default function Card({item}) {
 
     if (inactive) return (
         <div className="card-container">
-            <div className="card card-inactive ">
+            <div className="inactive-card">
                 <span className="fairy">Сказочное заморское яство</span>
                 <h2 className="name">Нямушка</h2>
                 <h3 className="contain">{contain}</h3>
