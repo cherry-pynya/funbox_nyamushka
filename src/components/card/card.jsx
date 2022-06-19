@@ -2,6 +2,8 @@ import { useState } from "react";
 
 export default function Card({item}) {
     const [active, setActive] = useState(false);
+    const [cardClicked, setCardClicked] = useState(false);
+
     const { contain, portion, present, weight, desc, inactive, sadNews } = item;
 
     const handleActive = (e) => {
@@ -9,9 +11,20 @@ export default function Card({item}) {
         setActive(!active);
     }
 
+    const handleCardClick = (e) => {
+        setCardClicked(true);
+    }
+
+    const handleMouseLeave = (e) => {
+        if (cardClicked) {
+            setActive(!active);
+        }
+        setCardClicked(false);
+    }
+
     if ( !inactive )return (
         <div className="card-container">
-            <div className={!active ? "card" : "card card-active"} onClick={handleActive}>
+            <div className={!active ? "card" : "card card-active"} onClick={handleCardClick} onMouseLeave={handleMouseLeave}>
                 <span className="fairy">Сказочное заморское яство</span>
                 <h2 className="name">Нямушка</h2>
                 <h3 className="contain">{contain}</h3>
