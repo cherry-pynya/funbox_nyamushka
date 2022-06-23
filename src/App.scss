@@ -267,10 +267,12 @@ body {
 }
 
 @media (max-width: 990px) {
-  .card {
-    margin-top: 20px;
+  .card-container {
+    height: 514px;
   }
-
+  .card {
+    margin-bottom: 5px;
+  }
   .layout {
     flex-wrap: wrap;
   }

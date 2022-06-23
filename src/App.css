@@ -283,8 +283,11 @@ body {
 }
 
 @media (max-width: 990px) {
+  .card-container {
+    height: 514px;
+  }
   .card {
-    margin-top: 20px;
+    margin-bottom: 5px;
   }
   .layout {
     -ms-flex-wrap: wrap;
